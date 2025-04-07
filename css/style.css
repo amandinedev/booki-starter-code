@@ -9,6 +9,8 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --nav-hover-color: #0065FC;
+    --button-border-color: #F2F2F2;
+    --button-hover-bg: #DEEBFF;
 }
 
 .fa-solid {
@@ -36,7 +38,7 @@ header {
 
  header img {
     height: 19px;
-    padding: 30px 50px 30px;
+    padding: 30px 50px 30px 0px;
 }
 
 nav {
@@ -63,6 +65,101 @@ a {
     margin: 0;
     font-size: 22px;
 }
+
+strong {
+    font-weight: 700;
+}
+
+
+/********* research *************/
+
+.research {
+    display: flex;
+    flex-direction: column ;
+    gap: 35px;    
+    margin: 35px 0 35px 0;
+
+}
+
+.headline h1{
+    margin-bottom: 8px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 377px;
+    height:49px ;
+}
+
+.fa-location-dot{
+    color: black;
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0 0 15px ;
+    padding: 26px 18px;
+}
+
+.search-bar input{
+    border: 1px solid var(--button-border-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 16px;
+}
+
+::placeholder{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+#search-button{
+    font-size: 18px;
+    color: white ;
+    background-color: #0065FC;
+    border-style: none;
+    border-radius: 0 15px 15px 0 ;
+    padding: 15px 16px;
+}
+
+#search-button i{
+    display:none;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}  
+
+.filter-bar button{
+    background-color: white;
+    border: 2px solid var(--button-border-color);
+    border-radius: 25px ;
+    margin: 10px;
+    padding: 16.5px 19px;
+    font-size: 17px;
+    &:hover{
+        background-color: var(--button-hover-bg);
+    }
+
+}
+
+.info-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+.info-bar i{
+    background-color: white;
+    border:1px solid var(--button-border-color);
+    border-radius: 25px;
+    padding:5px 10px;
+}
+        
+
 
 .card {
     background-color: white;
@@ -99,12 +196,6 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
-
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -192,8 +283,17 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    
     /* nav a:hover{
         border-top: none;
         border-bottom: solid 2px ; 
-    }*/
-}
+    }
+
+    #search-button p{
+       display:none;
+    }
+
+    #search-button i{
+        display: contents; 
+    }   */
+}    
