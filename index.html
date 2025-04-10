@@ -31,10 +31,12 @@
                 </div>
                 <div class="search-bar">
                     <span><i class="fa-solid fa-location-dot fa-lg" aria-hidden="true"></i></span>
-                    <input type="text" placeholder="Marseille, France" class="search-placeholder">
+                    <form method="get" action="">
+                    <input type="search" id="search-input" placeholder="Marseille, France" class="search-placeholder">
+                    </form>
                     <button id="search-button">
                         <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                        <p><strong>Rechercher</strong></p>
+                        <span><strong>Rechercher</strong></span>
                     </button>
                 </div>
                 <section class="filter-bar">
@@ -58,17 +60,18 @@
                         </button>
                     </div>
                 </section>
-                <section class="info-bar">
+                <div class="info-bar">
                     <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </section>
+                </div>
             </div>
             <div id="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
-                            <article class="card">
+                            <div class="row-one">
+                                 <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits simples">
                                 <div class="card-content">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -82,8 +85,8 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="card">
+                                </article>
+                                 <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant deux lits, un bureau et une télévision">
                                 <div class="card-content">
                                         <h3 class="card-title">Hôtel Chez Amina</h3>
@@ -97,8 +100,8 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article> 
-                            <article class="card">
+                                </article> 
+                                <article class="card">
                                 <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit double et une penderie">
                                 <div class="card-content">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -112,8 +115,10 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article> 
-                            <article class="card">
+                                 </article> 
+                            </div>
+                            <div class="row-two">
+                                <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit double avec un décor marin">
                                 <div class="card-content">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -127,8 +132,8 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="card">
+                                </article>
+                                <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant à droite, deux lits superposés et à gauche une fenêtre et un ventilateur">
                                 <div class="card-content">
                                         <h3 class="card-title">Auberge La Canebière</h3>
@@ -142,8 +147,8 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article>
-                            <article class="card">
+                                </article>
+                                <article class="card">
                                 <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant deux fois deux lits superposés en bois">
                                 <div class="card-content">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -157,7 +162,8 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                            </article>
+                                </article>
+                            </div>
                         </a>   
                         <button class="cta"><strong>Afficher plus</strong></button> 
                     </div>
@@ -232,9 +238,61 @@
                 </section>
             </div>
             <div id="activities">
+                <h2>Activités à Marseille</h2>
+                <div class="activities-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image de bateaux dans le vieux port de Marseille">
+                            <div class="card-content">
+                                    <h3 class="card-title">Vieux port</h3>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du fort de Pomègues en contre-plongée">
+                            <div class="card-content">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image des Calanques vues du front de mer">
+                            <div class="card-content">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de la basilique en contre-plongée depuis les quartiers environnants">
+                            <div class="card-content">
+                                    <h3 class="card-title">Notre-dame-de-la-garde</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </div>
         </main>
-        <footer></footer>
+        <footer> 
+            <div class="footer-container">    
+                <h2>A propos</h2>     
+                <ul>    
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul> 
+            </div> 
+            <div class="footer-container">    
+                <h2>Nos hébergements</h2> 
+                <ul>    
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footer-container">    
+                <h2>Assistance</h2>
+                <ul> 
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
