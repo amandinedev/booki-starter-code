@@ -122,7 +122,7 @@ strong {
     background-color: #0065FC;
     border-style: none;
     border-radius: 0 15px 15px 0 ;
-    padding: 15px 16px;
+    padding: 15.5px 16px;
 }
 
 #search-button i{
@@ -235,7 +235,7 @@ strong {
     display: flex;
     flex-direction: column;
     height: 207.25px;
-    width: 30%;    
+    width: 33%;    
 }
 
 .hebergements-cards img {
@@ -252,10 +252,17 @@ strong {
     gap: 8px;
     border-radius: 20px;
     padding: 5px 15px 15px 15px; 
-    box-sizing: border-box;
-    
+    /* box-sizing: border-box; */
 }
 
+.hebergements-cards .card-title{
+        font-size: 16px;
+    }
+
+.hebergements-cards .card-subtitle{
+       font-size: 14px;
+    }
+    
 .hebergements .cta{
     font-size: 18px;
     margin-top: 30px;
@@ -328,7 +335,7 @@ strong {
     display: flex;
     flex-direction: column;
     height: 439px;
-    width:25%; 
+    width:33%; 
     padding: 0px;
 }
 
@@ -349,6 +356,10 @@ strong {
     padding: 20px 19px ;
 }
 
+.activities-cards .card-title{
+    font-size:16px;
+}
+
 /****** Footer ***********/
 footer {
     display: flex;
@@ -357,7 +368,7 @@ footer {
     background-color: var(--main-bg-color);
     padding-left: 0;
     margin-top: 30px;
-    height: 163px;
+    box-sizing: border-box;
 }
 
 .footer-container{
@@ -447,7 +458,7 @@ footer li{
     }
 
     .activities-cards .card-title {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .activities-cards img{
@@ -462,6 +473,27 @@ footer li{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        height: 19px;
+        object-fit: contain;
+        padding: 30px
+    }
+
+    nav {
+    justify-content: center;
+    gap: 0px;
+    }
+
+    nav a { 
+        padding: 16px 50px 16px 50px;
+        border-bottom: solid 2px var(--button-border-color);
+    }
+
     nav a:hover{
         border-top: none;
         border-bottom: solid 2px ; 
@@ -505,7 +537,7 @@ footer li{
     .populaires{
         margin-top: 15px;
     }
-    
+
     .populaires-cards a {
         width: 100%;
     }
@@ -520,5 +552,23 @@ footer li{
 
     .hebergements-cards .card{
         width: 100%
+    }
+
+    .activities-cards a {
+        flex-direction: column;
+    }
+
+    .activities-cards .card{
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        
+    }
+
+    .footer-container{
+        padding: 30px;
+        width: 100%;
     }
 }
