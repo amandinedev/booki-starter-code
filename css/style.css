@@ -128,6 +128,10 @@ form {
   display: none;
 }
 
+.filter-bar h2 {
+    font-size: 18px;
+  }
+
 .filter-bar {
   display: flex;
   align-items: center;
@@ -509,10 +513,6 @@ footer li {
   #search-button i {
     display: contents;
     color: white;
-  }
-
-  .filter-bar h2 {
-    font-size: 18px;
   }
 
   .filter-bar-buttons {
